@@ -1,0 +1,8 @@
+.header{
+    position: fixed; /* fixed has absolute in itself */
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: var(--body-color);
+    padding: .75rem 0;
+}
