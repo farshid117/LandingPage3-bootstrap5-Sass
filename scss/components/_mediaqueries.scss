@@ -15,3 +15,20 @@
         font-size: 1rem;
     }
 }
+@media screen and (min-width: 768px){
+    .nav{
+        &__list{
+            flex-direction: row;
+            column-gap: 2.5rem;
+        }
+        &__toggle{
+            display: none;
+        }
+    }
+}
+@media screen and (min-width: 992px){
+    .button__header{
+        display: block;
+        padding: .5rem 1rem;
+    }
+}

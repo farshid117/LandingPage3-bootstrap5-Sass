@@ -20,7 +20,7 @@
   }
   &__menu {
     @media (max-width: 767px) {
-      position: fixed; /* fixed has absolute in itself */
+      position: fixed; /* fixed has absolute into itself */
       top: -100%;
       left: 0;
       right: 0;
