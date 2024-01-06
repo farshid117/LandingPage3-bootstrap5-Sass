@@ -1,7 +1,7 @@
 .button {
   display: inline-block; /* for use into <a>  */
   background: var(--primary-color);
-  color: #fff;
+  color: var(--container-color);
   padding: 0.75rem 1.5rem;
   border-radius: 3rem;
   transition: .4s;
