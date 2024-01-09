@@ -6,6 +6,16 @@
 }
 .section{
   padding: 4rem 0 1rem 0;
+
+  &__title{
+    font-size: 1.25rem;
+    color: var(--title-color);
+    margin-bottom: 1rem;
+
+    span{
+      color: var(--primary-color);
+    }
+  }
 }
 .svg__img{
     width: 300px;
