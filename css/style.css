@@ -165,10 +165,6 @@ h4 {
   padding: 0.75rem 0;
 }
 
-.nav-scroll {
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.09);
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -212,6 +208,25 @@ h4 {
 
 .show-menu {
   top: 5rem;
+}
+
+.nav-scroll {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.09);
+}
+
+.active-link {
+  position: relative;
+  transition: 1s;
+}
+.active-link::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 45%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: black;
 }
 
 .home {
