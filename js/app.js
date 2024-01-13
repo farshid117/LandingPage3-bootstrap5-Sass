@@ -1,10 +1,14 @@
-//todo:  nav menu toggle 
+//todo: show nav_menu with toggle 
 const navMenu = document.querySelector(".nav__menu");
 const navToggle = document.querySelector(".nav__toggle");
 
 navToggle.addEventListener("click", () => {
     navMenu.classList.toggle("show-menu");
 });
+//todo: Hidden nav__menu by Click on nav__menu in mobile-first`
+navMenu.addEventListener("click", () => {
+    navMenu.classList.remove("show-menu");
+})
 
 //todo: navbar scroll behavior 
 const nav = document.querySelector(".nav");
