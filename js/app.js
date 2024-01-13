@@ -17,7 +17,7 @@ window.addEventListener("scroll", () => {
     }
 }) 
 
-//todo: interactive .active-link by js
+//todo: interactive .active-link by js between nav-items
 const navItems = document.querySelectorAll(".nav__item ");
 // console.log("navItems: ", navItems);
 navItems.forEach(navItem => {
