@@ -24,6 +24,15 @@
       text-align: right;
     }
   }
+  .support {
+    &__container {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+    &__info{
+      text-align: right;
+    }
+  }
 }
 @media screen and (min-width: 768px) {
   .nav {
