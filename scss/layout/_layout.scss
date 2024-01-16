@@ -12,6 +12,11 @@
     color: var(--title-color);
     margin-bottom: 1rem;
 
+    &_center{
+      @extend .section__title;
+      text-align: center;
+    }
+
     span{
       color: var(--primary-color);
     }
