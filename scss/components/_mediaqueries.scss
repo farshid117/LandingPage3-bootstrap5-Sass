@@ -17,10 +17,10 @@
       grid-template-columns: 1fr 1fr;
       align-items: center;
     }
-    &__img{
+    &__img {
       order: -1;
     }
-    &__info{
+    &__info {
       text-align: right;
     }
   }
@@ -29,11 +29,18 @@
       grid-template-columns: 1fr 1fr;
       align-items: center;
     }
-    &__info{
+    &__info {
       text-align: right;
     }
   }
+  .services {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1rem;
+    }
+  }
 }
+
 @media screen and (min-width: 768px) {
   .nav {
     &__list {
@@ -69,5 +76,11 @@
   .button__header {
     display: block;
     padding: 0.5rem 1rem;
+  }
+  .services {
+    &__container {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 1rem;
+    }
   }
 }

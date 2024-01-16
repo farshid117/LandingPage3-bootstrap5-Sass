@@ -14,4 +14,15 @@
   &__header {
     display: none;
   }
+  &__link{
+    background: var(--container-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: .25rem 1rem;
+
+    &:hover{
+      background: var(--primary-color);
+      color: var(--container-color);
+    }
+  }
 }
