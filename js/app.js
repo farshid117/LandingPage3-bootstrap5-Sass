@@ -1,8 +1,8 @@
-//todo: show nav_menu with toggle 
+//todo: show nav_menu with toggle hamberger menu 
 const navMenu = document.querySelector(".nav__menu");
-const navToggle = document.querySelector(".nav__toggle");
+const hambergurMenu = document.querySelector(".nav__toggle");
 
-navToggle.addEventListener("click", () => {
+hambergurMenu.addEventListener("click", () => {
     navMenu.classList.toggle("show-menu");
 });
 //todo: Hidden nav__menu by Click on nav__menu in mobile-first`
@@ -21,8 +21,9 @@ window.addEventListener("scroll", () => {
     }
 }) 
 
-//todo: interactive .active-link by js between nav-items
+//todo: Move .active-link between nav-items by js
 const navItems = document.querySelectorAll(".nav__item ");
+//navItem is NodeList simular to Array.accept forEach and reject split or join method
 // console.log("navItems: ", navItems);
 navItems.forEach(navItem => {
     navItem.addEventListener("click", () => {

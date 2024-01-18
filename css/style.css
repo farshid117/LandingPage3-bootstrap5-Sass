@@ -138,9 +138,14 @@ h4 {
   background: var(--primary-color);
   color: var(--container-color);
 }
+.button__flext {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
 
 .header {
-  position: fixed; /* fixed has absolute in itself */
+  position: fixed; /* fixed has absolute into itself */
   top: 0;
   left: 0;
   width: 100%;
@@ -165,7 +170,7 @@ h4 {
 }
 @media (max-width: 767px) {
   .nav__menu {
-    position: fixed; /* fixed has absolute inside its own */
+    position: fixed; /* fixed has absolute into itself */
     top: -100%; /* in toggle change to 4 rem */
     left: 0;
     right: 0;
@@ -266,6 +271,25 @@ h4 {
   color: var(--primary-color);
 }
 
+.app__container {
+  gap: 2.5rem;
+}
+.app__info {
+  display: grid;
+  row-gap: 0.5rem;
+  text-align: center;
+}
+.app__description {
+  margin-bottom: 1.5rem;
+}
+.app__img {
+  text-align: center;
+}
+
+.margin-left {
+  margin-left: 10px;
+}
+
 @media screen and (min-width: 576px) {
   .svg__img {
     width: 100%;
@@ -299,7 +323,22 @@ h4 {
   }
   .services__container {
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     column-gap: 1rem;
+  }
+  .app__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 1rem;
+  }
+  .app__img {
+    order: -1;
+  }
+  .app__info {
+    text-align: right;
+  }
+  .app__title {
+    text-align: right;
   }
 }
 @media screen and (min-width: 768px) {

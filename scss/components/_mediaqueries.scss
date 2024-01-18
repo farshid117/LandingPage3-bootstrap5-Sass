@@ -36,11 +36,27 @@
   .services {
     &__container {
       grid-template-columns: repeat(2, 1fr);
+      align-items: center;
       column-gap: 1rem;
     }
   }
+  .app{
+    &__container{
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      column-gap: 1rem;
+    }
+    &__img{
+      order: -1;
+    }
+     &__info{
+        text-align: right;
+    }
+    &__title{
+      text-align: right;
+    }
+  }
 }
-
 @media screen and (min-width: 768px) {
   .nav {
     &__list {

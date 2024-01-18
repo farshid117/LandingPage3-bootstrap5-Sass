@@ -1,5 +1,5 @@
 .header {
-  position: fixed; /* fixed has absolute in itself */
+  position: fixed; /* fixed has absolute into itself */
   top: 0;
   left: 0;
   width: 100%;
@@ -25,7 +25,7 @@
   }
   &__menu {
     @media (max-width: 767px) {
-      position: fixed; /* fixed has absolute inside its own */
+      position: fixed; /* fixed has absolute into itself */
       top: -100%; /* in toggle change to 4 rem */
       left: 0;
       right: 0;
