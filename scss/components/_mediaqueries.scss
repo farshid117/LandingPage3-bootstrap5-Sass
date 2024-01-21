@@ -40,23 +40,37 @@
       column-gap: 1rem;
     }
   }
-  .app{
-    &__container{
+  .app {
+    &__container {
       grid-template-columns: repeat(2, 1fr);
       align-items: center;
       column-gap: 1rem;
     }
-    &__img{
+    &__img {
       order: -1;
     }
-     &__info{
-        text-align: right;
+    &__info {
+      text-align: right;
     }
-    &__title{
+    &__title {
       text-align: right;
     }
   }
+
+  .contact {
+    &__container {
+      grid-template-columns: 2fr 1fr 1fr;
+      align-items: center;
+    }
+    &__description {
+      text-align: start;
+    }
+    &__button{
+      text-align: start;
+    }
+  }
 }
+
 @media screen and (min-width: 768px) {
   .nav {
     &__list {

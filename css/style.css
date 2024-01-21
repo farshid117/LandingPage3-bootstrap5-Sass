@@ -112,6 +112,10 @@ h4 {
   justify-self: center;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .button {
   display: inline-block; /* for use into <a>  */
   background: var(--primary-color);
@@ -290,6 +294,33 @@ h4 {
   margin-left: 10px;
 }
 
+.contact {
+  padding: 7rem 0 4rem 0;
+}
+.contact__container {
+  padding-bottom: 3rem;
+  justify-content: center;
+}
+.contact__description {
+  text-align: center;
+}
+.contact__info {
+  display: grid;
+  row-gap: 0.5rem;
+}
+.contact__address {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--title-color);
+}
+.contact__information {
+  font-weight: 400;
+  color: var(--text-color);
+}
+.contact__button {
+  text-align: center;
+}
+
 @media screen and (min-width: 576px) {
   .svg__img {
     width: 100%;
@@ -339,6 +370,16 @@ h4 {
   }
   .app__title {
     text-align: right;
+  }
+  .contact__container {
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+  }
+  .contact__description {
+    text-align: start;
+  }
+  .contact__button {
+    text-align: start;
   }
 }
 @media screen and (min-width: 768px) {
