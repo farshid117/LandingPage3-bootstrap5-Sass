@@ -1,73 +1,74 @@
 @media screen and (min-width: 576px) {
-  .svg__img {
-    width: 100%;
-  }
+  
   .home {
     padding-top: 10rem;
-    &__container {
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-    }
-    &__img {
-      order: 1;
-    }
+      &__container {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+      }
+      &__img {
+        order: 1;
+      }
   }
   .about {
-    &__container {
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-    }
-    &__img {
-      order: -1;
-    }
-    &__info {
-      text-align: right;
-    }
+      &__container {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+      }
+      &__img {
+        order: -1;
+      }
+      &__info {
+        text-align: right;
+      }
   }
   .support {
-    &__container {
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-    }
-    &__info {
-      text-align: right;
-    }
+      &__container {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+      }
+      &__info {
+        text-align: right;
+      }
   }
   .services {
-    &__container {
-      grid-template-columns: repeat(2, 1fr);
-      align-items: center;
-      column-gap: 1rem;
-    }
+      &__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 1rem;
+      }
   }
   .app {
-    &__container {
-      grid-template-columns: repeat(2, 1fr);
-      align-items: center;
-      column-gap: 1rem;
-    }
-    &__img {
-      order: -1;
-    }
-    &__info {
-      text-align: right;
-    }
-    &__title {
-      text-align: right;
-    }
+      &__container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 1rem;
+      }
+      &__img {
+        order: -1;
+      }
+      &__info {
+        text-align: right;
+      }
+      &__title {
+        text-align: right;
+      }
   }
 
   .contact {
-    &__container {
-      grid-template-columns: 2fr 1fr 1fr;
-      align-items: center;
-    }
-    &__description {
-      text-align: start;
-    }
-    &__button{
-      text-align: start;
-    }
+      &__container {
+        grid-template-columns: 1fr 1fr; 
+        align-items: center;
+      }
+      &__title{
+        text-align: start;
+      }
+      &__description {
+        text-align: start;
+      }
+      &__button{
+        text-align: start;
+      }
   }
 }
 
@@ -79,6 +80,21 @@
     }
     &__toggle {
       display: none;
+    }
+  }
+   .contact {
+    &__container {
+      grid-template-columns: 3fr 1.5fr 1.25fr; 
+      align-items: center;
+    }
+    &__title{
+      text-align: start;
+    }
+    &__description {
+      text-align: start;
+    }
+    &__button{
+      text-align: start;
     }
   }
 }

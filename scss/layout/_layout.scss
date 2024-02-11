@@ -23,11 +23,13 @@
   }
 }
 .svg__img{
-    width: 300px;
     justify-self: center;
 }
 
 .bold{
   font-weight: bold;
+}
+::-webkit-scrollbar {
+  display: none;
 }
   
