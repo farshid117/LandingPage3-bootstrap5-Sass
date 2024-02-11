@@ -343,6 +343,7 @@ h4 {
   }
   .about__img {
     order: -1;
+    width: 100%;
   }
   .about__info {
     text-align: right;
@@ -353,6 +354,9 @@ h4 {
   }
   .support__info {
     text-align: right;
+  }
+  .support__img {
+    width: 100%;
   }
   .services__container {
     grid-template-columns: repeat(2, 1fr);
@@ -366,6 +370,7 @@ h4 {
   }
   .app__img {
     order: -1;
+    width: 100%;
   }
   .app__info {
     text-align: right;
