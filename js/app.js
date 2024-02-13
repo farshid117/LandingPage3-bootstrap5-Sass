@@ -23,9 +23,9 @@ window.addEventListener("scroll", () => {
 
 //todo: Move .active-link between nav-items by js
 const navItems = document.querySelectorAll(".nav__item ");
-//navItem is NodeList simular to Array.accept forEach and reject split or join method
-// console.log("navItems: ", navItems);
-navItems.forEach(navItem => {
+//* navItem is NodeList simular to Array accept forEach & length method but reject split or join method
+//? Approach 1
+/* navItems.forEach(navItem => {
     navItem.addEventListener("click", () => {
         for (let j = 0; j < navItems.length; j++) {
             navItems[j].classList.remove("active-link");
@@ -33,7 +33,14 @@ navItems.forEach(navItem => {
 
         navItem.classList.add("active-link")
     })
-})
+}) */
+//? Approach 2
+function addActiveLink (index){
+    for (let j = 0; j < navItems.length; j++) {
+        navItems[j].classList.remove("active-link");
+    }
+    navItems[index].classList.add("active-link")
+}
 
 /*Two approach to convert NodeList to Array*/
 /*
