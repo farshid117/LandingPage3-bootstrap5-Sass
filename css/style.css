@@ -150,6 +150,7 @@ h4 {
   column-gap: 1rem;
 }
 
+/* pages */
 .header {
   position: fixed; /* fixed has absolute into itself */
   top: 0;
