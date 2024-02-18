@@ -327,6 +327,45 @@ h4 {
   text-align: center;
 }
 
+.footer {
+  background-color: var(--primary-color);
+  margin-top: -15px;
+}
+.footer__content {
+  width: 100%;
+}
+.footer__logo {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: whitesmoke;
+  text-align: center;
+}
+.footer__description {
+  color: azure;
+  text-align: center;
+}
+.footer__links {
+  display: grid;
+  row-gap: 1rem;
+}
+.footer__link {
+  color: whitesmoke;
+  margin-right: 1rem;
+}
+.footer__social {
+  font-size: 3rem;
+}
+.footer__copy {
+  text-align: center;
+  margin-top: 1rem;
+  color: #fff;
+}
+.footer__social-link {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
 @media screen and (min-width: 576px) {
   .home {
     padding-top: 10rem;
@@ -413,6 +452,13 @@ h4 {
   }
   .contact__button {
     text-align: start;
+  }
+  .footer__container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .footer__social-link {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
   }
 }
 @media screen and (min-width: 800px) {

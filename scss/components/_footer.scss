@@ -1,0 +1,44 @@
+.footer {
+  background-color: var(--primary-color);
+  margin-top: -15px;
+
+  &__container {
+   
+  }
+  &__content{
+    width: 100%;
+  }
+  &__logo {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: whitesmoke;
+    text-align: center;
+  }
+  &__description {
+    color: azure;
+    text-align: center;
+  }
+
+  
+  &__links{
+    display: grid;
+    row-gap: 1rem;
+  }
+  &__link {
+    color: whitesmoke;
+    margin-right: 1rem;
+  }
+  &__social {
+    font-size: 3rem;
+  }
+  &__copy {
+    text-align: center;
+    margin-top: 1rem;
+    color: #fff;
+  }
+  &__social-link {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}

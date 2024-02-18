@@ -1,79 +1,78 @@
 @media screen and (min-width: 576px) {
-  
   .home {
     padding-top: 10rem;
-      &__container {
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-      }
-      &__img {
-        order: 1;
-      }
+    &__container {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+    &__img {
+      order: 1;
+    }
   }
   .about {
-      &__container {
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-      }
-      &__img {
-        order: -1;
-        width: 100%;
-      }
-      &__info {
-        text-align: right;
-      }
+    &__container {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+    &__img {
+      order: -1;
+      width: 100%;
+    }
+    &__info {
+      text-align: right;
+    }
   }
   .support {
-      &__container {
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-      }
-      &__info {
-        text-align: right;
-      }
-      &__img{
-        width: 100%;
-      }
+    &__container {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+    &__info {
+      text-align: right;
+    }
+    &__img {
+      width: 100%;
+    }
   }
   .services {
-      &__container {
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        column-gap: 1rem;
-      }
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      column-gap: 1rem;
+    }
   }
   .app {
-      &__container {
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        column-gap: 1rem;
-      }
-      &__img {
-        order: -1;
-        width: 100%;
-      }
-      &__info {
-        text-align: right;
-      }
-      &__title {
-        text-align: right;
-      }
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      column-gap: 1rem;
+    }
+    &__img {
+      order: -1;
+      width: 100%;
+    }
+    &__info {
+      text-align: right;
+    }
+    &__title {
+      text-align: right;
+    }
   }
 
   .contact {
-      &__container {
-        grid-template-columns: 1fr 1fr; 
-        align-items: center;
-      }
-      &__title{
-        text-align: start;
-      }
-      &__description {
-        text-align: start;
-      }
-      &__button{
-        text-align: start;
-      }
+    &__container {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+    &__title {
+      text-align: start;
+    }
+    &__description {
+      text-align: start;
+    }
+    &__button {
+      text-align: start;
+    }
   }
 }
 
@@ -87,19 +86,28 @@
       display: none;
     }
   }
-   .contact {
+  .contact {
     &__container {
-      grid-template-columns: 3fr 1.5fr 1.25fr; 
+      grid-template-columns: 3fr 1.5fr 1.25fr;
       align-items: center;
     }
-    &__title{
+    &__title {
       text-align: start;
     }
     &__description {
       text-align: start;
     }
-    &__button{
+    &__button {
       text-align: start;
+    }
+  }
+  .footer {
+    &__container {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    &__social-link {
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
     }
   }
 }
