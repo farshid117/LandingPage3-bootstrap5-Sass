@@ -101,6 +101,12 @@
       text-align: start;
     }
   }
+  .app{
+      &__buttons{
+        flex-direction: row;
+        justify-content: start;
+    }
+  }
   .footer {
     &__container {
       grid-template-columns: repeat(5, 1fr);
