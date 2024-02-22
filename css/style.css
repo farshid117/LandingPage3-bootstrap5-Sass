@@ -157,7 +157,9 @@ h4 {
   left: 0;
   width: 100%;
   background: var(--body-color);
-  padding: 0.75rem 0;
+  padding: 0.75rem 0 0 0;
+  z-index: 10;
+  padding: 0 20px;
 }
 
 .nav {
@@ -347,7 +349,8 @@ h4 {
 
 .footer {
   background-color: var(--primary-color);
-  margin-top: -115px;
+  margin-top: -40px;
+  z-index: -1;
 }
 .footer__content {
   width: 100%;
@@ -373,6 +376,7 @@ h4 {
 }
 .footer__social {
   font-size: 3rem;
+  justify-self: center;
 }
 .footer__copy {
   text-align: center;
@@ -474,6 +478,9 @@ h4 {
   .app__buttons {
     flex-direction: row;
     justify-content: start;
+  }
+  .footer {
+    margin-top: -115px;
   }
   .footer__container {
     grid-template-columns: repeat(5, 1fr);

@@ -1,6 +1,7 @@
 .footer {
   background-color: var(--primary-color);
-   margin-top: -115px;
+   margin-top: -40px;
+   z-index: -1;
 
   
   &__content{
@@ -29,6 +30,7 @@
   }
   &__social {
     font-size: 3rem;
+    justify-self: center;
   }
   &__copy {
     text-align: center;
