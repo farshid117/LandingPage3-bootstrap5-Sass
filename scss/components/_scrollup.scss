@@ -1,0 +1,26 @@
+.scrollup{
+    position: fixed;
+    right: 2rem;
+    bottom: -20%; /* in scrollY>500 become 3rem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+    color: white;
+    opacity: .6;
+
+    transition: .4s;
+
+}
+
+.scrollup:hover{
+    opacity: 1;
+}
+
+.scroll-show{
+    bottom: 3rem;
+}

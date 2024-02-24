@@ -19,13 +19,14 @@ window.addEventListener("scroll", () => {
     } else {
         nav.classList.remove("nav-scroll")
     }
-}) 
+})
 
 //todo: Move .active-link between nav-items by js
 const navItems = document.querySelectorAll(".nav__item ");
-//* navItem is NodeList simular to Array accept forEach & length method but reject split or join method
+//* navItems is NodeList simular to Array accept forEach & length method but reject split or join method
 //? Approach 1
-/* navItems.forEach(navItem => {
+/* 
+navItems.forEach(navItem => {
     navItem.addEventListener("click", () => {
         for (let j = 0; j < navItems.length; j++) {
             navItems[j].classList.remove("active-link");
@@ -33,11 +34,26 @@ const navItems = document.querySelectorAll(".nav__item ");
 
         navItem.classList.add("active-link")
     })
-}) */
+})
+
+* in fact fire onclick event into per naveitem*
+? modern approach
+navItems.forEach(navItem => {
+    navItem.onclik = () => {
+        for (let j = 0; j < navItems.length; j++) {
+            navItems[j].classList.remove("active-link");
+        }
+
+        navItem.classList.add("active-link")
+    })
+})
+
+
+*/
 //? Approach 2
-function addActiveLink (index){
-    for (let j = 0; j < navItems.length; j++) {
-        navItems[j].classList.remove("active-link");
+function addActiveLink(index) {
+    for (let i = 0; i < navItems.length; i++) {
+        navItems[i].classList.remove("active-link");
     }
     navItems[index].classList.add("active-link")
 }
@@ -47,3 +63,14 @@ function addActiveLink (index){
    1 : const navItemsArr = Array.from(navItems)
    2: const navItemsArr = Array.prototype.slice.call(navItems) 
 */
+
+/* //todo : scrollup js Add .scroll-show for scrollY>500 */
+const scrollup = document.querySelector(".scrollup")
+window.onscroll= ()=>{
+    if(this.scrollY>500){
+        scrollup.classList.add("scroll-show")
+    }else{
+        scrollup.classList.remove("scroll-show")
+
+    }
+}

@@ -16,7 +16,7 @@
   --primary-color: hsl(var(--hue), var(--sat), 52%);
   --primary-color-light: hsl(var(--hue), var(--sat), 85%);
   --primary-color-lighten: hsl(var(--hue), var(--sat), 80%);
-  --secondary-color: hsl(var(--hue), var(--sat), 53%);
+  --secondary-color: hsl(var(--hue), var(--sat), 30%);
   --title-color: hsl(var(--hue), 4%, 15%);
   --text-color: hsl(var(--hue), 4%, 35%);
   --text-color-light: hsl(var(--hue), 4%, 65%);
@@ -150,7 +150,7 @@ h4 {
   gap: 1rem;
 }
 
-/* pages */
+/* sections style */
 .header {
   position: fixed; /* fixed has absolute into itself */
   top: 0;
@@ -386,6 +386,30 @@ h4 {
 .footer__social-link {
   margin-right: 1rem;
   margin-left: 1rem;
+}
+
+.scrollup {
+  position: fixed;
+  right: 2rem;
+  bottom: -20%; /* in scrollY>500 become 3rem */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: var(--secondary-color);
+  border-radius: 50%;
+  color: white;
+  opacity: 0.6;
+  transition: 0.4s;
+}
+
+.scrollup:hover {
+  opacity: 1;
+}
+
+.scroll-show {
+  bottom: 3rem;
 }
 
 @media screen and (min-width: 576px) {
