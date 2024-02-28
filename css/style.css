@@ -25,6 +25,14 @@
   --ff-primary: "Vazir", sans-serif;
 }
 
+body.dark-theme {
+  --primary-color-light: hsl(var(--hue), var(--sat), 75%);
+  --title-color: hsl(var(--hue), 4%, 95%);
+  --text-color: hsl(var(--hue), 4%, 80%);
+  --body-color: hsl(var(--hue), 8%, 13%);
+  --container-color: hsl(var(--hue), 8%, 16%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -199,7 +207,14 @@ h4 {
   align-items: center;
   gap: 1.5rem;
 }
-.nav__item-link, .nav__toggle, .nav__logo {
+.nav__item_toggle {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  transition: all 2s;
+}
+.nav__item_link, .nav__toggle, .nav__logo {
   color: var(--title-color);
 }
 
@@ -288,6 +303,7 @@ h4 {
 .services__title {
   font-size: 1.25rem;
   font-weight: bold;
+  color: var(--title-color);
 }
 .services__icon {
   font-size: 3rem;
@@ -485,6 +501,9 @@ h4 {
   }
   .nav__toggle {
     display: none;
+  }
+  .nav__item_toggle {
+    position: unset; /* reset property to defult --> static */
   }
   .contact__container {
     grid-template-columns: 3fr 1.5fr 1.25fr;

@@ -85,6 +85,9 @@
     &__toggle {
       display: none;
     }
+    &__item_toggle{
+    position: unset; /* reset property to defult --> static */
+  }
   }
   .contact {
     &__container {

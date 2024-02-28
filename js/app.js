@@ -66,11 +66,46 @@ function addActiveLink(index) {
 
 /* //todo : scrollup js Add .scroll-show for scrollY>500 */
 const scrollup = document.querySelector(".scrollup")
-window.onscroll= ()=>{
-    if(this.scrollY>500){
+window.onscroll = () => {
+    if (this.scrollY > 500) {
         scrollup.classList.add("scroll-show")
-    }else{
+    } else {
         scrollup.classList.remove("scroll-show")
 
     }
 }
+/* //todo: Dark & Light Handler */
+const navItemToggle = document.querySelector(".nav__item_toggle")
+
+navItemToggle.addEventListener("click", () => {
+    navItemToggle.classList.toggle("bi-toggle-on")
+    navItemToggle.classList.toggle("bi-toggle-off")
+
+    theme = navItemToggle.classList.contains("bi-toggle-on") ? "dark" : "light"
+    localStorage.setItem("theme", theme)
+
+    if (theme == "dark") {
+        document.body.classList.add("dark-theme")
+    } else {
+        document.body.classList.remove("dark-theme")
+    }
+
+})
+
+window.onload=()=>{
+    let theme = localStorage.getItem("theme")
+    if (theme == "dark") {
+        navItemToggle.classList.add("bi-toggle-on")
+        navItemToggle.classList.remove("bi-toggle-off")
+        document.body.classList.add("dark-theme")
+    } else {
+        navItemToggle.classList.add("bi-toggle-off")
+        navItemToggle.classList.remove("bi-toggle-on")
+        document.body.classList.remove("dark-theme")
+    }
+}
+
+
+
+
+

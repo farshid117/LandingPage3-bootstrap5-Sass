@@ -26,7 +26,7 @@
     --hue: 227;
     --sat: 47%;
 
-    --primary-color: hsl(var(--hue), var(--sat), 52%);
+     --primary-color: hsl(var(--hue), var(--sat), 52%);
     --primary-color-light: hsl(var(--hue), var(--sat), 85%);
     --primary-color-lighten: hsl(var(--hue), var(--sat), 80%);
     --secondary-color: hsl(var(--hue), var(--sat), 30%);
@@ -38,5 +38,12 @@
     --container-color: #fff;
 
 
-    --ff-primary: "Vazir", sans-serif;
+    --ff-primary: "Vazir", sans-serif; 
+}
+body.dark-theme {
+    --primary-color-light: hsl(var(--hue), var(--sat), 75%);
+    --title-color: hsl(var(--hue), 4%, 95%);
+    --text-color: hsl(var(--hue), 4%, 80%);
+    --body-color: hsl(var(--hue), 8%, 13%);
+    --container-color: hsl(var(--hue), 8%, 16%);
 }
