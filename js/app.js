@@ -77,6 +77,20 @@ window.onscroll = () => {
 /* //todo: Dark & Light Handler */
 const navItemToggle = document.querySelector(".nav__item_toggle")
 
+window.onload = () => {
+    let theme = localStorage.getItem("theme") || "light"
+
+    if (theme == "dark") {
+        navItemToggle.classList.add("bi-toggle-on")
+        navItemToggle.classList.remove("bi-toggle-off")
+        document.body.classList.add("dark-theme")
+    } else {
+        navItemToggle.classList.add("bi-toggle-off")
+        navItemToggle.classList.remove("bi-toggle-on")
+        document.body.classList.remove("dark-theme")
+    }
+}
+
 navItemToggle.addEventListener("click", () => {
     navItemToggle.classList.toggle("bi-toggle-on")
     navItemToggle.classList.toggle("bi-toggle-off")
@@ -92,18 +106,7 @@ navItemToggle.addEventListener("click", () => {
 
 })
 
-window.onload=()=>{
-    let theme = localStorage.getItem("theme")
-    if (theme == "dark") {
-        navItemToggle.classList.add("bi-toggle-on")
-        navItemToggle.classList.remove("bi-toggle-off")
-        document.body.classList.add("dark-theme")
-    } else {
-        navItemToggle.classList.add("bi-toggle-off")
-        navItemToggle.classList.remove("bi-toggle-on")
-        document.body.classList.remove("dark-theme")
-    }
-}
+
 
 
 
