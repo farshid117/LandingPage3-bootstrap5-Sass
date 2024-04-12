@@ -1,5 +1,5 @@
 {
-  "name": "LandingPage3-Bootstrap5-Sass",
+  "name": "landingpage3-bootstrap5-sass",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/farshid117/ReadyBootstrapTemplate#readme",
   "dependencies": {
-    "sass": "^1.70.0"
+     "sass": "^1.70.0"
   }
 }
